@@ -7,3 +7,23 @@
     </head>
     <body>
         <script>
+               //object- collection(pair) of keys(properties) and its value
+            //create an object - using literal way and new keyword
+
+        let student={
+            name:"John",
+            age:23,
+            isMarried:false,
+            address:{
+                streetNo: B-6,
+                area:"Kailashpuri, Alambagh",
+                pincode: 225006,
+                city:"LUCKNOW"
+            },
+            education:["10th", "12th","B.Tech"],
+            degree: "B.Tech",
+            branch: "CSE",
+            year:2025,
+            getInfo: function(){
+                return "my current education is" + student.degree;
+            }

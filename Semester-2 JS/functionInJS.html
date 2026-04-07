@@ -31,6 +31,74 @@
 
         }
         add(123,23);
+
+
+        //arrow function using multiple lines
+
+        let msg2=(a,b) =>{
+            var num1=a;
+            var num2=b;
+            var result=num1/num2;
+            console.log("Result is " + res);
+        }
+        msg2(10,20);
+
+        //IIFE:- An IIFE (Immediately invoked function expression) is a JavaScript function as soon as
+
+
+
+        //once settled, a promise's state is 
+
+        let myPromise=new Promise(function(resolve,reject){
+            let age=25;
+            if(age>=18){
+                resolve("valid age");
+            }
+            else{
+                reject("wait for next year");
+            }
+        });
+        myPromise.then(msg=>console.log(msg))
+        .catch(error=>console.log(error));
+        console.log(myPromise);
+
+        //async and await are modern JavaScript keywords (introduced in ES2017) that provide a cleaner, more readable way to woek with Promises by allowing asynchronus code to be written in a synchronus-like style.
+    
+        async function userInfo(){
+            try{
+            let userData=await fetch('https://api.github.com//users/shreyashekhar11188');
+            let response=await userData.json();
+            console.log(response);
+        } //try end
+        catch(error) {
+            console.log(console.error);
+        }//catch end
+        } //function end 
+        userInfo();
+
+        //Higher order function:-
+
+        //function that either
+        let num=[4,6,7,8,9,3,2,1]
+
+        //map
+        let square=num.map(n=>n*n);
+        console.log(square);
+        //reduce
+        let sum=num.reduce((total,n)=>total+n);
+        console.log(sorting);
+        //for each
+        num.forEach(n=>console.log(n*2));
+
+        //local storage:- JavaScript localStorage is a feature that allows web applications
+
+        let myInfo={
+            name:'John',
+            age :45,
+            mob:95675676,
+          eMail: "john23@gmail.com"
+        }
+    
     </script>
     </body>
     </html>
